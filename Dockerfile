@@ -1,12 +1,13 @@
 FROM ensoulify2021/erpfrappe
 
 WORKDIR /home
-
-ARG GIT_REPO=https://github.com/MagedMRawash/ensoulify.git
+ARG REPO_FOLDER=frappe-docker-setup
+ARG GIT_REPO=https://github.com/MagedMRawash/${REPO_FOLDER}.git
 
 
 RUN git clone ${GIT_REPO}
 
-WORKDIR ensoulify
+WORKDIR ${REPO_FOLDER}
 
-CMD ["/usr/bash","thebash.sh"]
+ENTRYPOINT ["./boot.sh"]
+CMD ["/usr/bash"]
