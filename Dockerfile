@@ -4,8 +4,8 @@ WORKDIR /home
 ARG REPO_FOLDER=frappe-docker-setup
 ARG GIT_REPO=https://github.com/MagedMRawash/${REPO_FOLDER}.git
 
-
-RUN git clone ${GIT_REPO}
+ECHO 
+RUN sudo git clone ${GIT_REPO}
 
 WORKDIR ${REPO_FOLDER}
 
