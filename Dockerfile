@@ -9,5 +9,6 @@ RUN git clone ${GIT_REPO}
 
 WORKDIR ${REPO_FOLDER}
 
+RUN ./init.sh 
 ENTRYPOINT ["./boot.sh"]
 CMD ["/usr/bash"]
