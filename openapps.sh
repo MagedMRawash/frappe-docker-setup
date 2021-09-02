@@ -25,7 +25,8 @@ sudo -H -u frappe bash -c './apps/frappe.sh'
 #sudo -u frappe  bench setup supervisor 
 #sudo -u frappe  screen  -d -m -S bench bash -c 'bench start'
 #echo $(whoami)
-#sudo ln -s `pwd`/config/supervisor.conf /etc/supervisor/conf.d/frappe-bench.conf
+
+sudo ln -s `pwd`/config/supervisor.conf /etc/supervisor/conf.d/frappe-bench.conf
 supervisorctl reread 
 supervisorctl update 
 supervisorctl restart-all 
