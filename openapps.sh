@@ -3,7 +3,7 @@ sudo cp config/ens.conf /etc/supervisor/conf.d/
 
 sudo service supervisor start
 echo \n  "openapps" \n 
-sudo -H -u otheruser bash -c 'echo "I am $USER, with uid $UID"' 
+sudo -H -u frappe bash -c 'echo "I am $USER, with uid $UID"' 
 
 screen  -d -m -S vs bash -c 'code-server'
 
