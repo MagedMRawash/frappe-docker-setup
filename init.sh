@@ -2,6 +2,10 @@
 #////// Init Docker Config
 curl -fsSL https://code-server.dev/install.sh | sh
 
+
+sudo apt-get install screen 
+
+
 sudo apt-get update  -y && sudo apt-get upgrade -y
 hash -r
 
