@@ -1,4 +1,5 @@
-echo "the bash test number "
+
+echo "ensoulify Time " $(date)
 cd ..
 sudo rm -rf  frappe-docker-setup
 sudo git clone https://github.com/MagedMRawash/frappe-docker-setup.git
