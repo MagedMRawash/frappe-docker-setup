@@ -3,7 +3,7 @@ sudo cp config/ens.conf /etc/supervisor/conf.d/
 sudo apt-get install  dialog apt-utils -y  
 sudo apt-get install screen -y  
 sudo service supervisor start
-echo "openapps"
+echo \n  "openapps" \n 
 
 
 su - frappe 
