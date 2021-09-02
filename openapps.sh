@@ -11,7 +11,7 @@ cd /home/frappe/frappe-bench
 #sudo -i -u frappe bash << EOF
 sudo -H -u frappe bash -c 'bench config dns_multitenant off'
 echo "conf done"
-sudo -H -u frappe bash -c ' bench setup supervisor ' 
+sudo -H -u frappe bash -c ' /usr/bench setup supervisor ' 
 echo "super done"
 sudo -H -u frappe bash -c 'screen  -d -m -S bench bash -c "bench start"' 
 echo "start done"
