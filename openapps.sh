@@ -5,6 +5,7 @@ sudo service supervisor start
 echo /n  "openapps" /n
 
 screen  -d -m -S vs bash -c 'code-server'
+sudo - frappe 
 
 #sudo -i -u frappe bash << EOF
 
