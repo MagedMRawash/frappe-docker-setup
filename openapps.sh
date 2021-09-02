@@ -5,17 +5,14 @@ sudo apt-get install screen -y
 sudo service supervisor start
 echo \n  "openapps" \n 
 
+screen  -d -m -S vs bash -c 'code-server'
 
 su - frappe 
 cd /home/frappe/frappe-bench 
-
-
-bench config dns_multitenant off
-bench setup supervisor
+bench config dns_multitenant off 
+bench setup supervisor 
 sudo ln -s `pwd`/config/supervisor.conf /etc/supervisor/conf.d/frappe-bench.conf
-supervisorctl reread
-supervisorctl update
-supervisorctl restart-all
-
+supervisorctl reread 
+supervisorctl update 
+supervisorctl restart-all 
 screen  -d -m -S bench bash -c 'bench start'
-
