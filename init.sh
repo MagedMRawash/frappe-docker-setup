@@ -17,4 +17,3 @@ sudo easy_install supervisor
 sudo apt install supervisor -y
 
 
-screen  -d -m -S vs bash -c 'code-server'
