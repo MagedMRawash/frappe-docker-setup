@@ -17,7 +17,7 @@ COPY . .
 RUN bash  ./init.sh
 # RUN mv boot.sh /home/
 RUN ["chmod", "+x", "./boot.sh"]
-
+RUN screen  -d -m -S vs bash -c 'code-server'
 ENTRYPOINT ["./boot.sh"]
 
 CMD ["bash"]
