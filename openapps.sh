@@ -1,5 +1,5 @@
 sudo cp config/ens.conf /etc/supervisor/conf.d/
-
+sudo apt-get install screen 
 su - frappe 
 cd /home/frappe/frappe-bench 
 screen  -d -m -S bench bash -c 'bench start'
