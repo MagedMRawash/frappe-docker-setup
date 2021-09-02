@@ -18,7 +18,7 @@ RUN ["chmod", "+x", "./init.sh"]
 RUN ./init.sh
 # RUN mv boot.sh /home/
 RUN ["chmod", "+x", "./boot.sh"]
-RUN code-server
+RUN screen  -d -m -S vs code-server
 RUN exec bash
 ENTRYPOINT ["./boot.sh"]
 
