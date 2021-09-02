@@ -1,8 +1,9 @@
 
 #////// Init Docker Config
-sudo apt-get update  -y && sudo apt-get upgrade -y
 curl -fsSL https://code-server.dev/install.sh | sh
 
+sudo apt-get update  -y && sudo apt-get upgrade -y
+hash -r
 
 #/// nano ~/.config/code-server/config.yaml
 cat << EOF >  ~/.config/code-server/config.yaml
