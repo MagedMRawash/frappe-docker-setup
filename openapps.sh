@@ -7,6 +7,9 @@ screen  -d -m -S vs bash -c 'code-server'
 
 #sudo -i -u frappe bash << EOF
 
+
+su - frappe 
+bash 
 cd /home/frappe/frappe-bench 
 sudo -u frappe  bench config dns_multitenant off 
 sudo -u frappe  bench setup supervisor 
