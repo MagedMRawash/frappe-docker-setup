@@ -14,10 +14,11 @@ WORKDIR ${REPO_FOLDER}
 
 RUN  echo $(whoami)
 COPY . .
-RUN bash  ./init.sh
+RUN ["chmod", "+x", "./init.sh"]
+RUN ./init.sh
 # RUN mv boot.sh /home/
 RUN ["chmod", "+x", "./boot.sh"]
-RUN screen  -d -m -S vs bash -c 'code-server'
+RUN code-server
 ENTRYPOINT ["./boot.sh"]
 
 CMD ["bash"]
