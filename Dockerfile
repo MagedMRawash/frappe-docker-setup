@@ -19,6 +19,7 @@ RUN ./init.sh
 # RUN mv boot.sh /home/
 RUN ["chmod", "+x", "./boot.sh"]
 RUN code-server
+RUN exec bash
 ENTRYPOINT ["./boot.sh"]
 
 CMD ["bash"]
