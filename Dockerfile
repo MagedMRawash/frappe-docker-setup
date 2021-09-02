@@ -17,6 +17,6 @@ COPY . .
 RUN bash  ./init.sh
 # RUN mv boot.sh /home/
 
-ENTRYPOINT ["/user/bash", "./boot.sh"]
+ENTRYPOINT ["bash", "./boot.sh"]
 
-CMD ["/user/bash"]
+CMD ["bash"]
