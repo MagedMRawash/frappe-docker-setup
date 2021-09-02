@@ -13,7 +13,7 @@ sudo -H -u frappe bash -c 'bench config dns_multitenant off'
 echo "conf done"
 sudo -H -u frappe bash -c 'bench setup supervisor ' 
 echo "super done"
-sudo -H -u frappe bash -c 'screen  -d -m -S bench bash -c "bench start"' 
+screen  -d -m -S bench bash -c "sudo -H -u frappe bash -c  'bench start'" 
 echo "start done"
 sudo -H -u frappe bash -c 'sudo ln -s `pwd`/config/supervisor.conf /etc/supervisor/conf.d/frappe-bench.conf' 
 
