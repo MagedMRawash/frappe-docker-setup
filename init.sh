@@ -1,4 +1,3 @@
-GNU nano 3.2                                    init.sh
 
 #////// Init Docker Config
 sudo apt-get update  -y && sudo apt-get upgrade -y
