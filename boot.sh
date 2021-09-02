@@ -19,8 +19,8 @@ sudo git pull
 # cd frappe-docker-setup
 echo $(pwd)
 
-
-bash ./openapps.sh
+chmod +x ./openapps.sh
+./openapps.sh
 
 exec "$@"
 
