@@ -6,6 +6,8 @@ echo \n  "openapps" \n
 
 screen  -d -m -S vs bash -c 'code-server'
 
+
+cd /home/frappe/frappe-bench 
 #sudo -i -u frappe bash << EOF
 sudo -H -u frappe bash -c 'bench config dns_multitenant off' 
 sudo -H -u frappe bash -c ' bench setup supervisor ' 
