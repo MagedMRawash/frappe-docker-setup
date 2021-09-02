@@ -8,7 +8,7 @@ bind-addr: 0.0.0.0:8005
 auth: password
 password: awsec2
 cert: false
-user-data-dir : .
+user-data-dir : /home/frappe/
 EOF
 
 
