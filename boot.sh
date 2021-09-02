@@ -1,3 +1,4 @@
+#!/bin/sh
 
 echo "ensoulify Time " $(date)
 # cd ..
@@ -8,3 +9,6 @@ sudo git pull
 echo $(pwd)
 
 bash ./openapps.sh
+
+exec "$@"
+
