@@ -9,6 +9,7 @@ bench config dns_multitenant off
 bench setup supervisor
 sudo ln -s `pwd`/config/supervisor.conf /etc/supervisor/conf.d/frappe-bench.conf
 
+su - 
 sudo service supervisor start
 
 echo "openapps"
