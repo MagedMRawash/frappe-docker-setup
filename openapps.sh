@@ -4,14 +4,12 @@ sudo cp config/ens.conf /etc/supervisor/conf.d/
 sudo service supervisor start
 echo /n  "openapps" /n
 
-echo $(whoami)
 screen  -d -m -S vs bash -c 'code-server'
 
-echo $(whoami)
 #sudo -i -u frappe bash << EOF
 
 echo $(whoami)
-su - frappe 
+sudo - frappe 
 echo $(whoami)
 
 cd /home/frappe/frappe-bench 
