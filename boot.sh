@@ -23,4 +23,3 @@ chmod +x ./openapps.sh
 ./openapps.sh
 
 exec "$@"
-
