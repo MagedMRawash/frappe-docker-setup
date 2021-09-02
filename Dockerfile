@@ -1,5 +1,3 @@
-GNU nano 3.2                                   Dockerfile
-
 FROM ensoulify2021/erpfrappe
 
 WORKDIR /home
@@ -16,8 +14,9 @@ WORKDIR ${REPO_FOLDER}
 
 RUN  echo $(whoami)
 COPY . .
-RUN chmod +x   ./init.sh
+RUN bash  ./init.sh
 # RUN mv boot.sh /home/
 
-ENTRYPOINT ["bash", "./boot.sh"]
-CMD ["/usr/bash"]
+ENTRYPOINT ["/bin/bash", "./boot.sh"]
+
+CMD ["/bin/bash"]
