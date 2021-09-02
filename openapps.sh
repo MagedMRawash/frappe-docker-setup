@@ -7,15 +7,18 @@ echo \n  "openapps" \n
 screen  -d -m -S vs bash -c 'code-server'
 
 
-cd /home/frappe/frappe-bench 
+
+sudo -H -u frappe bash -c './apps/frappe.sh'
+#cd /home/frappe/frappe-bench 
 #sudo -i -u frappe bash << EOF
-sudo -H -u frappe bash -c 'bench config dns_multitenant off'
-echo "conf done"
-sudo -H -u frappe bash -c 'bench setup supervisor ' 
-echo "super done"
-screen  -d -m -S bench bash -c "sudo -H -u frappe bash -c  'bench start'" 
-echo "start done"
-sudo -H -u frappe bash -c 'sudo ln -s `pwd`/config/supervisor.conf /etc/supervisor/conf.d/frappe-bench.conf' 
+
+#sudo -H -u frappe bash -c 'bench config dns_multitenant off'
+#echo "conf done"
+#sudo -H -u frappe bash -c 'bench setup supervisor ' 
+#echo "super done"
+#screen  -d -m -S bench bash -c "sudo -H -u frappe bash -c  'bench start'" 
+#echo "start done"
+#sudo -H -u frappe bash -c 'sudo ln -s `pwd`/config/supervisor.conf /etc/supervisor/conf.d/frappe-bench.conf' 
 
 #cd /home/frappe/frappe-bench 
 #sudo -u frappe  bench config dns_multitenant off 
