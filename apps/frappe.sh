@@ -1,5 +1,6 @@
 cd /home/frappe/frappe-bench
 
+echo ' the user : $(whoami) "$USER"'
 echo 'starting config dns_multitenant off'       
 bench config dns_multitenant off                                 
 echo 'Ending config dns_multitenant off'                                                                                                                                                  
