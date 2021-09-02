@@ -18,6 +18,6 @@ RUN bash  ./init.sh
 # RUN mv boot.sh /home/
 RUN ["chmod", "+x", "./boot.sh"]
 
-ENTRYPOINT [ "bash " ,"./boot.sh"]
+ENTRYPOINT ["./boot.sh"]
 
 CMD ["bash"]
