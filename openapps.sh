@@ -7,3 +7,6 @@ echo "openapps"
 chmod 0760 /etc/supervisor/supervisord.conf
 chmod +x './apps/frappe.sh'
 sudo -i -H  -u frappe <<< $(pwd)/apps/frappe.sh
+sudo -i -H  -u frappe <<< $(pwd)/apps/vs.sh
+
+
