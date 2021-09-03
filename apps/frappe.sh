@@ -20,3 +20,5 @@ sudo service supervisor stop
 sudo service supervisor start
 
 screen  -d -m -S bench bash -c 'bench start'
+
+screen -wipe
