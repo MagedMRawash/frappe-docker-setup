@@ -19,6 +19,7 @@ supervisorctl update
 sudo service supervisor stop
 sudo service supervisor start
 
+echo '............................................ $pwd'
 screen  -d -m -S bench bash -c 'bench start'
 
 screen -wipe
