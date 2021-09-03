@@ -19,11 +19,6 @@ supervisorctl update
 sudo service supervisor stop
 sudo service supervisor start
 
-bench get-app frappe --branch v13.9.1 
-y
-bench get-app erpnext --branch v13.9.1 
-
-
 rm /logs/worker.log 
 rm /logs/worker.err.log
 
