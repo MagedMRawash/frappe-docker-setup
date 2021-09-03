@@ -1,16 +1,6 @@
 #!/bin/bash
 
-echo "ensoulify Time " $(date)
-
-#/// nano ~/.config/code-server/config.yaml
-sudo cat << EOF >  ~/.config/code-server/config.yaml
-bind-addr: 0.0.0.0:8005
-auth: password
-password: awsec2
-cert: false
-user-data-dir : /home/frappe/
-EOF
-
+echo "ensoulify Time " $(date) 
 
 # cd ..
 # sudo rm -rf  frappe-docker-setup
